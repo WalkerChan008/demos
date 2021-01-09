@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/robot.css">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <title>robot</title>
+</head>
+<body>
+    <div class="robot-wrapper">
+        <div class="header">聊天机器人</div>
+        <div class="content"></div>
+        <div class="input">
+            <input type="text" class="input-box" onkeydown="send(event)">
+            <span class="sent-btn" onclick="send(event)">发送</span>
+        </div>
+    </div>
+    <script src="./js/robot.js"></script>
+</body>
+</html>

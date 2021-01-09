@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  list-style: none;
+  text-decoration: none;
+}
+* html,
+* body {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100%;
+}
+* html .container,
+* body .container {
+  position: relative;
+  height: 100%;
+  padding-top: 10%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+* html .container .song-img,
+* body .container .song-img {
+  position: relative;
+  width: 50%;
+  height: 0;
+  padding-top: 50%;
+  margin: 35px auto 40px;
+  overflow: hidden;
+}
+* html .container .song-img .img-wrapper,
+* body .container .song-img .img-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+* html .container .song-img .img-wrapper img,
+* body .container .song-img .img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+* html .container .song-info,
+* body .container .song-info {
+  color: #fff;
+  text-align: center;
+}
+* html .container .song-info .title,
+* body .container .song-info .title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+* html .container .song-info .singer,
+* body .container .song-info .singer,
+* html .container .song-info .album,
+* body .container .song-info .album {
+  color: rgba(255, 255, 255, 0.6);
+}
+* html .container .song-info .album,
+* body .container .song-info .album {
+  margin: 5px 0 40px;
+}
+* html .container .progress,
+* body .container .progress {
+  display: flex;
+}
+* html .container .progress div,
+* body .container .progress div {
+  color: #ffffff;
+}
+* html .container .progress .cur-time,
+* body .container .progress .cur-time,
+* html .container .progress .end-time,
+* body .container .progress .end-time {
+  width: 50px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+* html .container .progress .pro-bar,
+* body .container .progress .pro-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+}
+* html .container .progress .pro-bar .back-bar,
+* body .container .progress .pro-bar .back-bar,
+* html .container .progress .pro-bar .front-bar,
+* body .container .progress .pro-bar .front-bar {
+  width: 100%;
+  border-top: 2px solid #fff;
+}
+* html .container .progress .pro-bar .back-bar,
+* body .container .progress .pro-bar .back-bar {
+  border-top-color: rgba(255, 255, 255, 0.3);
+}
+* html .container .progress .pro-bar .front-bar,
+* body .container .progress .pro-bar .front-bar {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+}
+* html .container .progress .pro-bar .front-bar:after,
+* body .container .progress .pro-bar .front-bar:after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  transform: translateY(-55%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+* html .container .btn-group,
+* body .container .btn-group {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  height: 8vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+* html .container .btn-group div,
+* body .container .btn-group div {
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 50%;
+}
+* html .container .btn-group .like-btn,
+* body .container .btn-group .like-btn {
+  background-image: url('../images/icon-like.png');
+}
+* html .container .btn-group .like-btn.like-solid,
+* body .container .btn-group .like-btn.like-solid {
+  background-image: url('../images/icon-like-solid.png');
+}
+* html .container .btn-group .prev-btn,
+* body .container .btn-group .prev-btn {
+  background-image: url('../images/icon-prev.png');
+}
+* html .container .btn-group .play-btn,
+* body .container .btn-group .play-btn {
+  background-image: url('../images/icon-play.png');
+}
+* html .container .btn-group .play-btn.pause,
+* body .container .btn-group .play-btn.pause {
+  background-image: url('../images/icon-pause.png');
+}
+* html .container .btn-group .next-btn,
+* body .container .btn-group .next-btn {
+  background-image: url('../images/icon-next.png');
+}
+* html .container .btn-group .list-btn,
+* body .container .btn-group .list-btn {
+  background-image: url('../images/icon-list.png');
+}

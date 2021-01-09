@@ -1,0 +1,52 @@
+/* pages/rating-star/index.wxss */
+.rating-star-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rating-star {
+  width: 55px;
+  height: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(http://static.nipic.com/images/works_star_png24.png);
+}
+.star-0 {
+  background-position: 0 0;
+}
+.star-1 {
+  background-position: 0 -11px;
+}
+.star-2 {
+  background-position: 0 -22px;
+}
+.star-3 {
+  background-position: 0 -33px;
+}
+.star-4 {
+  background-position: 0 -44px;
+}
+.star-5 {
+  background-position: 0 -55px;
+}
+.star-6 {
+  background-position: 0 -66px;
+}
+.star-7 {
+  background-position: 0 -77px;
+}
+.star-8 {
+  background-position: 0 -88px;
+}
+.star-9 {
+  background-position: 0 -99px;
+}
+.star-10 {
+  background-position: 0 -110px;
+}
+
+.rating-average {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #999;
+}

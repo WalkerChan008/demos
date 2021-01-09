@@ -1,0 +1,18 @@
+/**app.wxss**/
+@import "./pages/rating-star/index.wxss";
+
+page {
+  background-color: #f1f1f1;
+}
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+.input-placeholder {
+  margin-left: 10px;
+  color: #aaa;
+}

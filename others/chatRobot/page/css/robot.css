@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.robot-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 360px;
+    height: 640px;
+    border: 1px solid #424242;
+    border-radius: 17px;
+    background-color: rgba(204, 204, 204, 0.3);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.header {
+    display: inline-block;
+    padding: 17px 0;
+    text-align: center;
+    background-color: #424242;
+    font-size: 17px;
+    color: #fff;
+}
+.content {
+    flex-grow: 1;
+    overflow: scroll;
+}
+.input {
+    display: flex;
+    padding: 12px 17px;
+    min-height: 60px;
+    background-color: #424242;
+    box-sizing: border-box;
+}
+.input .input-box {
+    flex: 1;
+    padding: 0 7px;
+    border-radius: 7px;
+    border-style: none;
+    outline: none;
+}
+.input .sent-btn {
+    margin-left: 10px;
+    padding: 7px;
+    background-color: green;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.my-chat {
+    position: relative;
+    float: right;
+    background: rgb(158,234,106);
+    padding: 5px 10px;
+    line-height: 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    max-width: 60%;
+}
+
+.my-chat:after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: -10px;
+    top: 8px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgb(158,234,106);
+}
+
+.robot-chat {
+    position: relative;
+    float: left;
+    background: white;
+    padding: 5px 10px;
+    line-height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+    max-width: 60%;
+}
+
+.robot-chat:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -10px;
+    top: 8px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.my-avatar {
+    float: right;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.robot-avatar {
+    float: left;
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}

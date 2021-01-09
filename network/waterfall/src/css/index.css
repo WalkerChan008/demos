@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrapper {
+    width: 80%;
+    min-width: 930px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #555;
+}
+.wrapper ul {
+    display: inline-block;
+}
+.wrapper .box {
+    float: left;
+}
+.wrapper .box .item {
+    width: 200px;
+    margin: 10px 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.wrapper .box .item .cover {
+    width: 200px;
+    overflow: hidden;
+}
+.wrapper .box .item img {
+    width: 100%;
+}
+.wrapper .box .item p {
+    word-break: break-all;
+    text-align: left;
+}

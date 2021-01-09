@@ -1,0 +1,30 @@
+{
+  "name": "webclass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "webpack-dev-server --inline --devtool eval-source-map --progress --colors"
+  },
+  "keywords": [
+    "html"
+  ],
+  "author": "walker",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "jquery": "^3.3.1",
+    "less": "^3.7.1",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.1"
+  }
+}

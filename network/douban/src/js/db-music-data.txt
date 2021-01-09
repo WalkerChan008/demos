@@ -1,0 +1,320 @@
+{
+    "count": 7,
+    "start": 0,
+    "total": 86171,
+    "musics": [{
+        "rating": {
+            "max": 10,
+            "average": "8.5",
+            "numRaters": 201,
+            "min": 0
+        },
+        "author": [{
+            "name": "Supercar"
+        }],
+        "alt_title": "",
+        "image": "https://img1.doubanio.com\/spic\/s2667639.jpg",
+        "tags": [{
+            "count": 46,
+            "name": "Supercar"
+        }, {
+            "count": 36,
+            "name": "日本"
+        }, {
+            "count": 22,
+            "name": "Electronic"
+        }, {
+            "count": 20,
+            "name": "j-rock"
+        }, {
+            "count": 12,
+            "name": "indie"
+        }, {
+            "count": 7,
+            "name": "电子"
+        }, {
+            "count": 5,
+            "name": "japan"
+        }, {
+            "count": 5,
+            "name": "J-Rock"
+        }],
+        "mobile_link": "https:\/\/m.douban.com\/music\/subject\/1791140\/",
+        "attrs": {
+            "publisher": ["Sony"],
+            "singer": ["Supercar"],
+            "version": ["专辑"],
+            "pubdate": ["2005-03-24"],
+            "title": ["B"],
+            "media": ["CD"],
+            "tracks": ["ディスク：1\n1. (AM I)CONFUSING YOU?\n2. LOVE SONG\n3. HELLO\n4. RIGHT NOW\n5. YES,\n6. ALRIGHT\n7. HALKROAD\n8. SEVEN FRONT\n9. WAVEMENT\n10. SLEEPING BAG\n11. ELECTRIC SEA\n12. PINK ROCK\n13. GUMNOVA\nディスク：2\n1. RAINBOW RAIN\n2. FREE YOUR SOUL\n3. WAYDO\n4. UNIVERSE\n5. SORATOBI\n6. Rou\n7. INTERMISSION\n8. HIRAMEKI INSPIRATION\n9. ANTENNA\n10. SCALE\n11. ALIVE\n12. VOICE\n13. ROLLIN’ ROLLIN’\n14. FOX,DOGS AND DOVES ※〈初回その他〉"],
+            "discs": ["2"]
+        },
+        "title": "B",
+        "alt": "https:\/\/music.douban.com\/subject\/1791140\/",
+        "id": "1791140"
+    }, {
+        "rating": {
+            "max": 10,
+            "average": "7.9",
+            "numRaters": 31,
+            "min": 0
+        },
+        "author": [{
+            "name": "四分卫"
+        }],
+        "alt_title": "",
+        "image": "https://img3.doubanio.com\/spic\/s26873882.jpg",
+        "tags": [{
+            "count": 9,
+            "name": "四分卫"
+        }, {
+            "count": 5,
+            "name": "四分衛"
+        }, {
+            "count": 3,
+            "name": "rock"
+        }, {
+            "count": 2,
+            "name": "indie"
+        }, {
+            "count": 2,
+            "name": "2005"
+        }, {
+            "count": 1,
+            "name": "摇滚"
+        }, {
+            "count": 1,
+            "name": "台湾小indie"
+        }, {
+            "count": 1,
+            "name": "台湾乐团"
+        }],
+        "mobile_link": "https:\/\/m.douban.com\/music\/subject\/1916954\/",
+        "attrs": {
+            "publisher": ["角头音乐"],
+            "singer": ["四分卫"],
+            "pubdate": ["2005年6月"],
+            "title": ["B"],
+            "media": ["CD"],
+            "tracks": ["01 B\n02 MISSING\n03 月夜愈堕落"]
+        },
+        "title": "B",
+        "alt": "https:\/\/music.douban.com\/subject\/1916954\/",
+        "id": "1916954"
+    }, {
+        "rating": {
+            "max": 10,
+            "average": "7.5",
+            "numRaters": 22,
+            "min": 0
+        },
+        "author": [{
+            "name": "Iamamiwhoami"
+        }],
+        "alt_title": "",
+        "image": "https://img3.doubanio.com\/spic\/s4407656.jpg",
+        "tags": [{
+            "count": 4,
+            "name": "瑞典"
+        }, {
+            "count": 3,
+            "name": "Experimental"
+        }, {
+            "count": 3,
+            "name": "Electronic"
+        }, {
+            "count": 2,
+            "name": "iamamiwhoami"
+        }, {
+            "count": 2,
+            "name": "SynthPop"
+        }, {
+            "count": 2,
+            "name": "DreamPop"
+        }, {
+            "count": 2,
+            "name": "2010"
+        }, {
+            "count": 1,
+            "name": "电子"
+        }],
+        "mobile_link": "https:\/\/m.douban.com\/music\/subject\/4905718\/",
+        "attrs": {
+            "publisher": ["Iamamiwhoami"],
+            "singer": ["Iamamiwhoami"],
+            "version": ["单曲"],
+            "pubdate": ["2010-03-15"],
+            "title": ["B"],
+            "media": ["数字(Digital)"],
+            "tracks": ["1. B 3:29"],
+            "discs": ["1"]
+        },
+        "title": "B",
+        "alt": "https:\/\/music.douban.com\/subject\/4905718\/",
+        "id": "4905718"
+    }, {
+        "rating": {
+            "max": 10,
+            "average": "7.4",
+            "numRaters": 14,
+            "min": 0
+        },
+        "author": [{
+            "name": "줄리아 하트(Julia Hart)"
+        }],
+        "alt_title": "",
+        "image": "https://img1.doubanio.com\/spic\/s4238808.jpg",
+        "tags": [{
+            "count": 3,
+            "name": "indie"
+        }, {
+            "count": 2,
+            "name": "Pop"
+        }, {
+            "count": 2,
+            "name": "K-POP"
+        }, {
+            "count": 1,
+            "name": "하트"
+        }, {
+            "count": 1,
+            "name": "줄리아"
+        }, {
+            "count": 1,
+            "name": "韩国"
+        }, {
+            "count": 1,
+            "name": "韓國音樂"
+        }, {
+            "count": 1,
+            "name": "男声"
+        }],
+        "mobile_link": "https:\/\/m.douban.com\/music\/subject\/4727614\/",
+        "attrs": {
+            "publisher": ["Beatball Music"],
+            "singer": ["줄리아 하트(Julia Hart)"],
+            "discs": ["1"],
+            "pubdate": ["2010-03-30"],
+            "title": ["B"],
+            "media": ["CD"],
+            "tracks": ["01. 하얀 마법 속삭임 feat. IS\n02. Favorite\n03. 돌아와\n04. Plan B\n05. 나의 목소리\n06. 시모네타\n07. 한국소녀의 겨울"],
+            "version": ["EP"]
+        },
+        "title": "B",
+        "alt": "https:\/\/music.douban.com\/subject\/4727614\/",
+        "id": "4727614"
+    }, {
+        "rating": {
+            "max": 10,
+            "average": 0,
+            "numRaters": 6,
+            "min": 0
+        },
+        "author": [{
+            "name": "Pan Sonic"
+        }],
+        "alt_title": "",
+        "image": "https://img3.doubanio.com\/spic\/s4377344.jpg",
+        "tags": [{
+            "count": 1,
+            "name": "techno"
+        }, {
+            "count": 1,
+            "name": "PanSonic"
+        }],
+        "mobile_link": "https:\/\/m.douban.com\/music\/subject\/2353353\/",
+        "attrs": {
+            "publisher": ["Mute U.S."],
+            "singer": ["Pan Sonic"],
+            "pubdate": ["1999-05-04"],
+            "title": ["B"],
+            "media": ["LP Record"],
+            "tracks": ["Kuusi Halko", "Vapina 2", "Pyokki Halko"],
+            "discs": ["1"]
+        },
+        "title": "B",
+        "alt": "https:\/\/music.douban.com\/subject\/2353353\/",
+        "id": "2353353"
+    }, {
+        "rating": {
+            "max": 10,
+            "average": 0,
+            "numRaters": 5,
+            "min": 0
+        },
+        "author": [{
+            "name": "Battles"
+        }],
+        "alt_title": "",
+        "image": "https://img3.doubanio.com\/spic\/s3703834.jpg",
+        "tags": [{
+            "count": 1,
+            "name": "Post-Rock"
+        }, {
+            "count": 1,
+            "name": "Math-Rock"
+        }],
+        "mobile_link": "https:\/\/m.douban.com\/music\/subject\/1758554\/",
+        "attrs": {
+            "publisher": ["Dim Mak Records"],
+            "singer": ["Battles"],
+            "discs": ["1"],
+            "pubdate": ["2004"],
+            "title": ["B"],
+            "media": ["Audio CD"],
+            "tracks": ["1. S Z 2\n2. Tras 3\n3. I PT 2\n4. Bttls\n5. Dance"],
+            "version": ["EP"]
+        },
+        "title": "B",
+        "alt": "https:\/\/music.douban.com\/subject\/1758554\/",
+        "id": "1758554"
+    }, {
+        "rating": {
+            "max": 10,
+            "average": 0,
+            "numRaters": 7,
+            "min": 0
+        },
+        "author": [{
+            "name": "I Am Kloot"
+        }],
+        "alt_title": "",
+        "image": "https://img1.doubanio.com\/spic\/s4042388.jpg",
+        "tags": [{
+            "count": 3,
+            "name": "2009"
+        }, {
+            "count": 2,
+            "name": "英国"
+        }, {
+            "count": 1,
+            "name": "垃垃相亲"
+        }, {
+            "count": 1,
+            "name": "垃垃征婚"
+        }, {
+            "count": 1,
+            "name": "Rock"
+        }, {
+            "count": 1,
+            "name": "Indie-Rock"
+        }, {
+            "count": 1,
+            "name": "IAmKloot"
+        }],
+        "mobile_link": "https:\/\/m.douban.com\/music\/subject\/4120744\/",
+        "attrs": {
+            "publisher": ["Skinny Dog"],
+            "singer": ["I Am Kloot"],
+            "pubdate": ["2009-11-02"],
+            "title": ["B"],
+            "media": ["Audio CD"],
+            "tracks": ["Titanic", "Proof", "This House Is Haunted", "Cinders", "Deep Blue Sea", "Mermen, The", "Gods And Monsters", "Strange Little Girl", "Junk Culture", "Stop Taking Photographs", "Big Tears", "Monkeys", "By Myself", "Million Things, A", "Blue And Bone China", "Asleep At The Wheel", "Fat Kids In Photographs", "Ferris Wheels", "Tell Me Something", "Face Of Alabaster, The", "You Gotta Go", "Great Escape, The", "Glimmer", "Life In A Day", "Over My Shoulder", "86TV’s", "Twist", "Dogs Howl"],
+            "discs": ["1"]
+        },
+        "title": "B",
+        "alt": "https:\/\/music.douban.com\/subject\/4120744\/",
+        "id": "4120744"
+    }]
+}

@@ -1,0 +1,143 @@
+@import './base.less';
+
+body {
+    background-color: #efefef;
+    .nav {
+        position: fixed;
+        display: flex;
+        top: 0;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: @gray;
+        z-index: 1000;
+        .account {
+            flex-grow: 3;
+            padding-left: 10px;
+        }
+        .my-order {
+            flex-grow: 1;
+            padding-right: 10px;
+            text-align: right;
+        }
+    }
+
+    .header {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: @white;
+        .goodsName {
+            display: block;
+            margin: 20px 0;
+            padding: 0 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .goodsPrice {
+            margin-bottom: 10px;
+            padding: 0 15px;
+            font-size: 18px;
+            color: #f40;
+        }
+    }
+
+    .goodsSpec {
+        padding: 10px;
+        background-color: @white;
+        margin-bottom: 20px;
+        .right {
+            float: right;
+        }
+        .right::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+
+    .goodsDetail {
+        background-color: @white;
+        margin-bottom: 52px;
+        .detailWord {
+            padding: 10px 0 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .detailCont {
+            .title {
+                padding: 10px;
+            }
+        }
+    }
+
+    .btn {
+        position: fixed;
+        bottom: 0;
+        padding: 14px 0;
+        width: 100%;
+        color: @white;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #d72d33;
+    }
+
+    .spectCont {
+        display: none;
+        position: absolute;
+        .grayArea {
+            width: 411px;
+            height: 460px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .spectDetail {
+            background-color: @white;
+            .unitPrice {
+                padding: 10px;
+                border-bottom: 2px solid #ccc;
+                .priceWord {
+                    padding-right: 10px;
+                }
+                .priceNum {
+                    color: #f40;
+                }
+            }
+            .spect {
+                position: relative;
+                padding: 10px;
+                height: 75px;
+                border-bottom: 2px solid #ccc;
+                .spectWord {
+                    padding-right: 10px;
+                    vertical-align: top;
+                }
+                .spectList {
+                    position: absolute;
+                    top: 10px;
+                    padding-left: 55px;
+                    li {
+                        float: left;
+                        margin: 0 10px 10px 0;
+                        padding: 5px;
+                        border: 1px solid #d72d33;
+                        border-radius: 5px;
+                        color: #d72d33;
+                    }
+                    .active {
+                        background-color: #d72d33;
+                        color: @white;
+                    }
+                }
+                .spectList::after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+            }
+            .goodsNum {
+                padding: 10px;
+            }
+        }
+    }
+}

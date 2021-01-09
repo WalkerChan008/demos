@@ -1,0 +1,25 @@
+/**index.wxss**/
+@import '../movie-grids/index';
+
+.movies-content {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #fff;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-size: 36rpx;
+  color: #666;
+}
+.more {
+  font-size: 32rpx;
+  color: #32cd32;
+}
+.movie-scroll {
+  width: 100%;
+  margin-top: 20rpx;
+  white-space: nowrap;
+}

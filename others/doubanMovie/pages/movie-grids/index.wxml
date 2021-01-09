@@ -1,0 +1,13 @@
+<!--pages/movie-grids/index.wxml-->
+<import src="../rating-star/index" />
+
+<template name="movie-grids">
+  <view class="grids-wrapper" data-id="{{ id }}">
+    <view class="grids">
+      <image src="{{ images.medium }}"></image>
+      <text class="title">{{ title }}</text>
+      <template is="rating-star" data="{{ ...rating }}"></template>
+      <text class="collect-count">{{ collect_count }}人想看</text>
+    </view>
+  </view>
+</template>

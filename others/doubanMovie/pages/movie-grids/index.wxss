@@ -1,0 +1,27 @@
+/* pages/movie-grids/index.wxss */
+.grids-wrapper {
+  display: inline-block;
+  margin: 0 10rpx;
+}
+.grids {
+  display: flex;
+  flex-direction: column;
+   align-items: center; 
+}
+.grids image {
+  width: 200rpx;
+  height: 280rpx;
+}
+.grids .title {
+  width: 200rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.grids .collect-count {
+  font-size: 26rpx;
+  color: #b1b1b1;
+}
