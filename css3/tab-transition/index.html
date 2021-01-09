@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            position: relative;
+            margin-left: 20px;
+        }
+        p {
+            position: relative;
+            margin: 60px 10px;
+            width: 50px;
+            font-size: 20px;
+            color: #f40;
+            cursor: pointer;
+            z-index: 1;
+        }
+        p:hover + div {
+            opacity: 1;
+            left: 50px;
+        }
+        .wrapper div {
+            position: absolute;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 250px;
+            opacity: 0;
+            transition: all 500ms;
+        }
+        .wrapper div:nth-of-type(1) {
+            background: url('./image/5.png');
+        }
+        .wrapper div:nth-of-type(2) {
+            background: url('./image/7.png');
+        }
+        .wrapper div:nth-of-type(3) {
+            background: url('./image/11.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <p>car</p>
+        <div></div>
+        <p>bird</p>
+        <div></div>        
+        <p>svg</p>
+        <div></div>        
+    </div>
+</body>
+</html>

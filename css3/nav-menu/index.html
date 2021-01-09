@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>navMenu-css3</title>
+    <style>
+        @font-face {
+            font-family: 'myFont';
+            src: url('./font/go3v2.ttf');
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav-wrapper {
+            width: 780px;
+            height: 50px;
+            margin: 100px auto;
+            background: rgba(255, 166, 0, 1);
+            border-radius: 5px;
+            box-shadow: 0 5px 5px 0 #444;
+        }
+        .nav-wrapper ul::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .nav-wrapper ul li {
+            float: left;
+            width: 130px;
+            margin: 14px 0;
+            text-align: center;
+            border-right: 1px dotted #fff;
+            box-sizing: border-box;
+        }
+        .nav-wrapper ul li:nth-last-of-type(1) {
+            border-right: none;
+        }
+        .nav-wrapper ul li a {
+            display: inline-block;
+            font-family: 'myFont';
+            font-size: 18px;
+            color: #fff;
+            text-shadow: -2px 3px 0px rgba(66, 66, 66, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact me</a></li>
+        </ul>
+    </div>
+</body>
+</html>

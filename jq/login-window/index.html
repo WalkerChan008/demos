@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login-window</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+        }
+        .login-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            border-bottom: 1px solid #000;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            color: #38f;
+            border-bottom: 1px solid #38f;
+        }
+        .hidden {
+            display: none;
+        }
+        .wrapper {
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            margin-left: -200px;
+            width: 400px;
+            height: 500px;
+            border: 1px solid #ccc;
+        }
+        .wrapper .header {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            background: #efefef;
+            cursor: all-scroll;
+        }
+        .wrapper .header .logo {
+            margin: 5px 10px 0 10px;
+        }
+        .wrapper .header span {
+            position: absolute;
+            top: 20px;
+            margin-top: -10px;
+            font-size: 20px;
+            color: #666;
+        }
+        .wrapper .header .close {
+            position: absolute;
+            right: 20px;
+            font-size: 30px;
+            color: #ccc;
+            cursor: pointer;
+        }
+        .main {
+            position: relative;
+            margin: 20px;
+        }
+        .main .quick-login {
+            position: absolute;
+            right: 0;
+        }
+        .main .quick-login:hover {
+            border-bottom: 1px solid #38f;
+            color: #38f;
+            cursor: pointer;
+        }
+        .main input {
+            width: 100%;
+            height: 38px;
+            border: 1px solid #ccc;
+        }
+        .main .text {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .main .code {
+            margin-top: 20px;
+            width: 100%;
+        }
+        .main .code .text-code {
+            width: 55%;
+        }
+        .main .code img {
+            border: 1px solid #ccc;
+            vertical-align: -15px;
+            margin: 0 5px;
+        }
+        .main a,
+        .main .code a,
+        .main .msg-login a {
+            color: #38f;
+        }
+        .main a:hover,
+        .main .code a:hover,
+        .main .msg-login a:hover {
+            color: #38f;
+            text-decoration: underline;
+        }
+        .main .msg-login {
+            position: relative;
+        }
+        #auto-login {
+            width: 16px;
+            vertical-align: -14px;
+        }
+        .main .msg-login a {
+            position: absolute;
+            top: 10px;
+            right: 0;
+        }
+        .main .subm {
+            margin-bottom: 10px;
+            height: 48px;
+            background-color: #38f;
+            font-size: 16px;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .main .register {
+            position: absolute;
+            right: 0;
+        }
+        .wrapper .line {
+            display: inline-block;
+            margin-top: 30px;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+        .footer {
+            margin: 10px 20px 0;
+        }
+        .footer p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <span class="login-btn">登录</span>
+    <script src="./jquery-3.2.1.min.js"></script>
+    <script>
+        // practice
+        // var $wrapper = $('<div></div>').addClass('wrapper'),
+        //     $header = $('<div></div>').addClass('header').appendTo($wrapper),
+        //     $logo = $('<img>').addClass('logo').attr('src','./img/logo.png').appendTo($header),
+        //     $title = $('<span>登录百度账号</span>').appendTo($header),
+        //     $close = $('<a>×</a>').addClass('close').appendTo($header),
+        //     $main = $('<div></div>').addClass('main').appendTo($wrapper),
+        //     $quickLogin = $('<p>短信快捷登录</p>').addClass('quick-login').appendTo($main),
+        //     $form = $('<input class="text" type="text" placeholder="用户名/账号/手机号"><input type="password" placeholder="密码"><div class="code"><input class="text-code" type="text" placeholder="验证码"><img src="./img/code.png" alt="档期"><a href="#">换一张</a></div><div class="msg-login"><input type="checkbox" name="自动登录" id="auto-login"><label for="auto-login">下次自动登录</label><a href="#">遇到登录问题</a></div><input class="subm" type="submit" value="登录">').appendTo($main),
+        //     $line = $('<span>').addClass('line').appendTo($main),
+        //     $footer = $('<div>').addClass('footer').appendTo($wrapper),
+        //     $p = $('<p>可以使用以下方式登录</p>').appendTo($footer),
+        //     $img = $('<img>').attr('src', './img/1.png').appendTo($footer);
+ 
+        var $wrapper = $('<div class="wrapper">\
+                            <div class="header">\
+                                <img class="logo" src="./img/logo.png">\
+                                <span>登录百度账号</span>\
+                                <a class="close">×</a>\
+                            </div>\
+                            <div class="main">\
+                                <p class="quick-login">短信快捷登录</p>\
+                                <input class="text" type="text" placeholder="用户名/账号/手机号">\
+                                <input type="password" placeholder="密码">\
+                                <div class="code">\
+                                    <input class="text-code" type="text" placeholder="验证码">\
+                                    <img src="./img/code.png" alt="档期">\
+                                    <a href="#">换一张</a>\
+                                </div>\
+                                <div class="msg-login">\
+                                    <input type="checkbox" name="自动登录" id="auto-login">\
+                                    <label for="auto-login">下次自动登录</label>\
+                                    <a href="#">遇到登录问题</a>\
+                                </div>\
+                                <input class="subm" type="submit" value="登录">\
+                                <span class="line"></span>\
+                            </div>\
+                            <div class="footer">\
+                                <p>可以使用以下方式登录</p>\
+                                <img src="./img/1.png">\
+                            </div>\
+                        </div>');
+        
+        $('body').on('click', '.close', function () {
+            $('.wrapper').addClass('hidden');
+            // console.log('close');
+        });
+        $('.login-btn').one('click', function () {
+            // $('body').append($wrapper);
+            $wrapper.insertAfter($('.login-btn'));
+        });
+        $('.login-btn').on('click', function () {
+            $('.wrapper').removeClass('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+.content .item {
+    position: relative;
+    width: 16%;
+    height: 100%;
+    background-color: #555;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.content .active {
+    transition: width 0.2s linear;
+}
+.wrapper-active .active {
+    width: 100%;
+    transition: width 0.2s linear 0.2s;
+    opacity: 1;
+}
+.wrapper .item:not(.active) {
+    transition: height 0.2s linear 0.2s, width 0.2s linear;
+}
+.wrapper-active .item:not(.active) {
+    height: 0%;
+    width: 0%;
+    transition: height 0.2s linear, width 0.2s linear 0.2s;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s linear 1s;
+    opacity: 0;
+    user-select: none;
+    z-index: 100;
+}
+.item .title {
+    opacity: 1;
+    transition: opacity 0.2s linear 0.5s;
+}
+.wrapper-active .title {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.title h2 {
+    font-size: 1.25em;
+    transition: font-size 0.2s linear;
+}
+.item:hover .title h2 {
+    font-size: 1.875em;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, 100%, 0);
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 30px;
+    overflow: hidden;
+    opacity: 0.5;
+}
+.item:hover .bg-img {
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+.item .bg-img {
+    transform: translate3d(0, 0, 0);
+}
+.wrapper-active .active .bg-img {
+    opacity: 1;
+}
+.item:nth-of-type(1) .bg-img {
+    background-image: url("../image/1.jpg");
+    transition: transform 0.3s linear 0s;
+}
+.item:nth-of-type(2) .bg-img {
+    background-image: url("../image/2.jpg");
+    transition: transform 0.3s linear 0.1s;
+}
+.item:nth-of-type(3) .bg-img {
+    background-image: url("../image/3.jpg");
+    transition: transform 0.3s linear 0.2s;
+}
+.item:nth-of-type(4) .bg-img {
+    background-image: url("../image/4.jpg");
+    transition: transform 0.3s linear 0.3s;
+}
+.item:nth-of-type(5) .bg-img {
+    background-image: url("../image/5.jpg");
+    transition: transform 0.3s linear 0.4s;
+}
+.item:nth-of-type(6) .bg-img {
+    background-image: url("../image/6.jpg");
+    transition: transform 0.3s linear 0.5s;
+}
+
+.describe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.wrapper-active .describe {
+    opacity: 1;
+    transition: opacity 0.2s linear 0.4s;
+}
+.describe .header {
+    float: left;
+    user-select: none;
+}
+.describe .close {
+    float: right;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.describe .close::before,
+.describe .close::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 20px;
+    margin: 0 10px;
+    background-color: #fff;
+}
+.describe .close::before {
+    transform: rotate(45deg);
+}
+.describe .close::after {
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html,
+body,
+.wrapper,
+.ppt-list,
+.ppt {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.wrapper {
+    background: #444;
+}
+
+/* 图片内容样式 */
+.ppt-list .ppt {
+    padding: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.ppt-list .ppt:nth-of-type(1) {
+    background-image: url('../image/bg-1.jpg');
+}
+.ppt-list .ppt:nth-of-type(2) {
+    display: none;
+    background-image: url('../image/bg-2.jpg');
+}
+.ppt-list .ppt:nth-of-type(3) {
+    display: none;
+    background-image: url('../image/bg-3.jpg');
+}
+.ppt-list .ppt .title,
+.ppt-list .ppt .image {
+    width: 40%;
+    height: 40%;
+}
+.ppt-list .ppt .title {
+    float: left;
+    font-size: 10px;
+}
+.ppt-list .ppt:nth-of-type(1) .title {
+    font-size: 20px;
+}
+.ppt-list .ppt .image {
+    float: right;
+}
+.ppt-list .ppt .image img {
+    width: 0%;
+}
+.ppt-list .ppt:nth-of-type(1) .image img {
+    width: 100%;
+}
+
+/* ppt按钮样式 */
+.ppt-btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 100%;
+    height: 40px;
+}
+.ppt-btn .left-btn,
+.ppt-btn .right-btn {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.ppt-btn .left-btn {
+    left: 100px;
+    background-image: url('../image/left-btn.png');
+}
+.ppt-btn .right-btn {
+    right: 100px;
+    background-image: url('../image/right-btn.png');
+}
+
+/* 小圆点样式 */
+.ppt-order {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    height: 20px;
+}
+.ppt-order ul {
+    text-align: center;
+}
+.ppt-order ul li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: #444;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ppt-order ul li:nth-of-type(3) {
+    margin-right: 0;
+}
+.ppt-order ul li.active {
+    background-color: #fff;
+}

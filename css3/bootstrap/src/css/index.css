@@ -1,0 +1,178 @@
+body {
+    min-width: 444px;
+}
+
+/* 
+巨幕样式
+*/
+.jumbotron {
+    margin-bottom: 0;
+    padding: 90px 0;
+    color: #fff;
+    background: linear-gradient(45deg,#020031 0,#6d3353 100%);
+}
+.jumbotron h1 {
+    font-size: 100px;
+    font-weight: bold;
+}
+.jumbotron p.dis {
+    margin: 30px 0;
+    font-size: 30px;
+}
+.jumbotron p:nth-of-type(3) a {
+    color: #9d9d9d;
+}
+.jumbotron p:nth-of-type(3):hover a {
+    color: #fff;
+}
+
+/* 
+社交方式样式
+*/
+.bc-social {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+.bc-social-link {
+    display: inline-block;
+    margin: 0;
+    padding: 15px 0;
+    list-style: none;
+}
+.bc-social-link li {
+    display: inline-block;
+}
+.bc-social-link li a {
+    color: #555;
+}
+.bc-social-link .bc-social-weibo a:hover {
+    color: rgba(255, 0, 55, 0.7);
+}
+.bc-social-link .bc-social-weibo::before {
+    display: inline-block;
+    content: "|";
+    padding: 0 10px;
+    color: #ccc;
+}
+
+/* 
+主要内容区样式
+*/
+.content-header {
+    margin: 60px auto;
+    padding-bottom: 15px;
+    max-width: 530px;
+}
+.content-header h1 {
+    font-size: 42px;
+}
+.content-header small {
+    font-size: 14px;
+    font-weight: 200;
+}
+.thumbnail {
+    max-width: 310px;
+}
+.caption {
+    height: 200px;
+}
+.caption p {
+    padding: 0 5px;
+}
+
+/* 
+底部样式
+*/
+.footer {
+    margin-top: 80px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+.footer .border-btm {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dedede;
+}
+.footer .footer-dis {
+    color: #777;
+}
+.footer-msg {
+    margin-left: 8.5%;
+}
+.footer-msg h3 {
+    font-size: 16px;
+    color: #563d7c;
+}
+.footer-msg ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-msg ul a {
+    color: #777;
+}
+.footer-record {
+    margin: 20px 0 40px 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-record li {
+    display: inline-block;
+    color: #777;
+}
+.footer-record li:first-child::after {
+    padding: 0 6px 0 8px;
+    content: "|";
+    color: #ccc;
+}
+.footer-record li a {
+    color: #777;
+}
+
+/* 
+媒体查询样式
+*/
+@media screen and (max-width: 1199px) {
+    .nav-hide-md {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    .nav-hide-sm {
+        display: none !important;
+    }
+    .jumbotron h1 {
+        font-size: 90px;
+    }
+    .jumbotron p.dis {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .nav-hide-md {
+        display: block !important;
+    }
+    .nav-hide-sm {
+        display: block !important;
+    }
+    .jumbotron {
+        padding: 60px 0;
+    }
+    .jumbotron h1 {
+        font-size: 60px;
+    }
+    .jumbotron p.dis {
+        font-size: 18px;
+    }
+
+    .content .row>div {
+        margin-bottom: 30px;
+    }
+    .thumbnail {
+        margin: 0 auto;
+    }
+
+    .footer-msg {
+        margin: 0;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>disc-rotate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @keyframes move {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .wrapper div {
+            width: 130px;
+            height: 130px;
+            border: 70px solid #333;
+            border-radius: 50%;
+            background: url('./image/9.png');
+            background-size: contain;
+            animation: move 5s linear infinite paused;
+        }
+        .wrapper span {
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            left: 50%;
+            width: 10px;
+            height: 200px;
+            transform: translate(-50%, -35%) rotate(-60deg);
+            transform-origin: top;
+            transition: transform 500ms linear;
+            background: #999;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+        }
+        .wrapper .active {
+            transform: translate(-50%, -35%) rotate(-30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="disc"></div>
+        <span id="finger"></span>
+    </div>
+    <script>
+        var flag = true;
+
+        // 点击转盘播放/暂停
+        disc.onclick = function () {
+            if(flag) {
+                flag = false;
+                finger.className = 'active';
+                this.style.animationPlayState = 'running';
+            }else {
+                flag = true;
+                finger.className = '';
+                this.style.animationPlayState = 'paused';
+            }
+        }
+
+    </script>
+</body>
+</html>

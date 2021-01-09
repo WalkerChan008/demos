@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+        }
+        .loading {
+            display: inline-block;
+            margin-top: 10px;
+            width: 160px;
+            height: 20px;
+            border: 1px solid #000;
+            border-radius: 20px;
+            overflow: hidden;            
+        }
+        .loading-cont {
+            display: inline-block;
+            width: 1%;
+            height: 100%;
+            background-color: #0f0;
+            border-radius: 20px;
+        }
+        .loading-percent {
+            vertical-align: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">将文件拖入此区域</div>
+    <span class="loading">
+        <span class="loading-cont"></span>
+    </span>
+    <strong class="loading-percent">100%</strong>
+
+    <script>
+        var oBox = document.getElementById('box'),
+            fr = new FileReader();
+
+        function bindEvent() {
+            window.addEventListener('dragover', function (e) {
+                e.preventDefault();
+            }, false)
+            oBox.addEventListener('dragover', function (e) {
+                e.preventDefault();
+            }, false)
+            oBox.addEventListener('drop', function () {
+                fr.readAsText(file, '');
+            }, false)
+        }
+        bindEvent();
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            font-size: 0;
+        }
+        .wrapper div {
+            display: inline-block;
+            flex-grow: 1;
+        }
+        @media screen and (min-width: 1501px) {
+            .wrapper div {
+                width: 20%;
+            }
+        }
+        @media screen and (min-width: 1201px) and (max-width: 1500px) {
+            .wrapper div {
+                width: 25%;
+            }
+        }
+        @media screen and (min-width: 901px) and (max-width: 1200px) {
+            .wrapper div {
+                width: 33.33%;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 900px) {
+            .wrapper div {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .wrapper div {
+                width: 100%;
+            }
+        }
+        .wrapper div img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div><img src="./images/1.png" alt=""></div>
+        <div><img src="./images/2.png" alt=""></div>
+        <div><img src="./images/3.png" alt=""></div>
+        <div><img src="./images/4.png" alt=""></div>
+        <div><img src="./images/5.png" alt=""></div>
+        <div><img src="./images/6.png" alt=""></div>
+        <div><img src="./images/7.png" alt=""></div>
+        <div><img src="./images/8.png" alt=""></div>
+        <div><img src="./images/9.png" alt=""></div>
+        <div><img src="./images/10.png" alt=""></div>
+        <div><img src="./images/11.png" alt=""></div>
+        <div><img src="./images/12.png" alt=""></div>
+        <div><img src="./images/13.png" alt=""></div>
+    </div>
+</body>
+</html>

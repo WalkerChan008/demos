@@ -1,0 +1,101 @@
+/* svg标签初始化 */
+svg {
+    background: #efefef;
+    border: 1px solid #000;
+}
+
+/* 简易绘图 */
+#easy-paint .face,
+#easy-paint .eye-stroke,
+#easy-paint .nose,
+#easy-paint .mouth {
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+/* 抽风线 */
+#crazy-line path {
+    stroke: #555;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    stroke-dasharray: 400px;
+    stroke-dashoffset: 400px;
+    animation: move 1s ease-in-out alternate infinite;
+}
+@keyframes move {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* loading动态图 */
+#loading circle {
+    fill: transparent;
+    stroke: #aaa;
+    stroke-width: 15px;
+}
+#loading #circle-block {
+    stroke: #f40;
+    stroke-linecap: round;
+    animation: circle 1s ease-in-out infinite;
+}
+@keyframes circle {
+    to {
+        stroke-dashoffset: 0px;
+    }
+}
+
+/* 仪表盘 */
+.dash-wrapper {
+    margin: 20px;
+    padding-bottom: 20px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #000;
+}
+#dash-board path {
+    fill: transparent;
+    stroke: #aaa;
+    stroke-width: 15px;
+    stroke-linecap: round;
+}
+#dash-board #speed {
+    stroke: #f40;
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+}
+
+/* 动画签名 */
+.signature path {
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+}
+
+/* 卡通人物 */
+.cartoon * {
+    stroke: #000;
+}
+#cartoon-head,
+#cartoon-body {
+    fill: #2e87fd;
+}
+.bg-white {
+    fill: #fff;
+}
+#cartoon-nose,
+#cartoon-neck {
+    fill: red;
+}
+#cartoon-nose-point {
+    stroke: #fff;
+}
+#cartoon-mouth {
+    fill: transparent;
+}
+#cartoon-bell {
+    fill: #d9d116;
+}
+.bell-line {
+    stroke: #555;
+}
